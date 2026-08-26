@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Silicium">
+    <meta property="og:title" content=">SoO — Day / Night Cycle" />
+    <meta property="og:description" content="This tool calculates day and night windows... Silicium © 2026" />
+    <meta property="og:url" content="https://siege-of-orison" />
+    <meta property="og:image" content="preview.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SoO — Day / Night Cycle" />
+    <meta name="generator" content="my-fingers">
+    <title>SoO — Day / Night Cycle</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="theme-color" content="#712cf9"> 
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="app">
+
+    <div class="header">
+
+        <h1>
+            SIEGE OF ORISON
+            <span style="color:#4cc9ff;">—</span>
+            DAY / NIGHT CYCLE
+        </h1>
+
+        <div class="subtitle">
+            24h Earth Clock — <span id="timezone">LOCAL TIME</span> — Real Time
+        </div>
+
+    </div>
+
+
+    <div class="clock">
+
+        <canvas id="clock"></canvas>
+
+        <div class="center">
+
+            <div id="date" class="date">
+                --/--/----
+            </div>
+
+            <div id="now" class="now">
+                --:--:--
+            </div>
+
+            <div id="period" class="period">
+                ---
+            </div>
+
+            <div id="remaining" class="remaining">
+                ---
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="info">
+
+        <span>
+            ☀ DAY:
+            <b id="dayDuration">03:05:52</b>
+        </span>
+
+        <span>
+            ☾ NIGHT:
+            <b id="nightDuration">02:00:07</b>
+        </span>
+
+        <span>
+            ↻ CYCLE:
+            <b id="cycleDuration">05:06:00</b>
+        </span>
+
+    </div>
+</div>
+
+
+<script src="oapp.js" charset="utf-8"></script>
+
+</body>
+</html>
