@@ -1,4 +1,4 @@
-# A tool that displays the day/night cycles on Orison (Star Citizen' game's planet) in real time, based on the client's time zone.
+# A tool that displays the day/night cycles on Orison (Star Citizen game's planet) in real time, based on the client's time zone.
 
 # Disclaimer
 
