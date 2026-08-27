@@ -1,6 +1,3 @@
-
-
-
 * {
     box-sizing: border-box;
 }
@@ -34,22 +31,19 @@
 html,
 body {
     width: 100%;
-    min-height: 100%;
+    min-height: 100%;    
 }
 
 body {
+       
     margin: 0;
     min-height: 100vh;
 
-    background: radial-gradient(ellipse at 50% 42%, rgb(0 145 255) 0%, rgb(24 74 124) 32%, #03070d 78%);
+    background: radial-gradient(ellipse at 50% 42%, rgb(18 39 54) 0%, rgb(7 28 48) 32%, #03070d 78%);
 
     color: var(--text);
 
-    font-family:
-        "Segoe UI",
-        Arial,
-        Helvetica,
-        sans-serif;
+    font-family: "Chakra Petch", sans-serif;
 
     display: flex;
     justify-content: center;
@@ -155,7 +149,7 @@ h1 {
 
     letter-spacing: 5px;
 
-    color: #eef7ff;
+    color: #417cae;
 
     text-shadow:
         0 0 12px rgba(76, 201, 255, 0.18);
@@ -164,7 +158,7 @@ h1 {
 .subtitle {
     margin-top: 7px;
 
-    color: var(--text-soft);
+    color: #075597;
 
     font-size: 12px;
 
@@ -242,7 +236,7 @@ canvas {
 }
 
 
-/* petits repères HUD */
+
 
 .center::before {
     content: "";
@@ -357,7 +351,6 @@ canvas {
 
 
 .period.night {
-    /*color: var(--cyan);*/
     color: #2d82b5;
 
     text-shadow:
@@ -378,22 +371,13 @@ canvas {
     flex-wrap: wrap;
 }
 
+
 .info span {
     position: relative;
 
     min-width: 175px;
 
     padding: 10px 17px;
-
-    background:
-        linear-gradient(
-            180deg,
-            rgba(13, 31, 48, 0.88),
-            rgba(5, 16, 28, 0.88)
-        );
-
-    border:
-        1px solid var(--line);
 
     border-radius: 2px;
 
@@ -403,12 +387,21 @@ canvas {
 
     letter-spacing: 1px;
 
-    box-shadow:
-        inset 0 0 20px rgba(30, 110, 160, 0.04);
+    clip-path: polygon(
+        0 0,
+        calc(100% - 12px) 0,
+        100% 12px,
+        100% 100%,
+        12px 100%,
+        0 calc(100% - 12px)
+    );
+
+    background: #0e1d3094;
+    border-bottom: 1px solid rgb(0 0 0 / 3%);
+    box-shadow: 2 2 20px black;
 }
 
 
-/* petite barre cyan */
 
 .info span::before {
     content: "";
@@ -418,24 +411,34 @@ canvas {
     left: 0;
     top: 0;
 
-    width: 3px;
     height: 100%;
 
     background: var(--cyan);
 
     opacity: 0.65;
 
-    border-right: 1px solid var(--line);
+    border-right: 11px solid var(--line);
 }
+
+
 
 
 .info span:first-child::before {
-    background: var(--amber);
+    background: #664b0d;    
+}
+
+.info span:nth-child(2)::before{
+    background: #0b121f;
 }
 
 .info span:last-child::before {
-    background: white;
+    background: #343434;
 }
+
+
+
+
+
 
 
 .info b {
